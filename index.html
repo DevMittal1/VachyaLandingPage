@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vachya.ai - AI-Powered WhatsApp Business Solutions</title>
+    <meta name="description" content="Transform your WhatsApp business communications with AI-powered chatbots. Get real-time analytics, automated customer support, and intelligent notifications.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="10" fill="url(#logo-gradient)"/>
+                        <path d="M20 10L28 16V24L20 30L12 24V16L20 10Z" fill="white" opacity="0.9"/>
+                        <circle cx="20" cy="20" r="4" fill="url(#logo-gradient)"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#6366F1"/>
+                                <stop offset="100%" stop-color="#8B5CF6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Vachya.ai</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#analytics" class="nav-link">Analytics</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn-secondary" id="login-btn">Sign In</button>
+                    <button class="btn-primary" id="cta-btn">Get Started</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>AI-Powered WhatsApp Automation</span>
+                </div>
+                <h1 class="hero-title">
+                    Transform Your WhatsApp
+                    <span class="gradient-text">Business Communications</span>
+                </h1>
+                <p class="hero-description">
+                    Let AI handle your customer conversations on WhatsApp. Get intelligent responses, 
+                    real-time analytics, and automated notifications - all in one powerful platform.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large" id="hero-cta">
+                        Start Free Trial
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn-secondary btn-large" id="demo-btn">
+                        Watch Demo
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.66669 5L13.3334 10L6.66669 15V5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Businesses</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2M+</div>
+                        <div class="stat-label">Messages Processed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="chat-interface">
+                                <div class="chat-header">
+                                    <div class="chat-avatar"></div>
+                                    <div class="chat-info">
+                                        <div class="chat-name">Vachya AI Assistant</div>
+                                        <div class="chat-status">Online</div>
+                                    </div>
+                                </div>
+                                <div class="chat-messages">
+                                    <div class="message received">
+                                        <div class="message-bubble">Hi! How can I help you today?</div>
+                                    </div>
+                                    <div class="message sent">
+                                        <div class="message-bubble">What are your business hours?</div>
+                                    </div>
+                                    <div class="message received typing">
+                                        <div class="message-bubble">
+                                            <div class="typing-indicator">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <div class="card-icon">📊</div>
+                        <div class="card-text">Real-time Analytics</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🔔</div>
+                        <div class="card-text">Smart Notifications</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">⚡</div>
+                        <div class="card-text">Instant Responses</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Features</div>
+                <h2 class="section-title">Everything You Need to Scale</h2>
+                <p class="section-description">
+                    Powerful features designed to automate, analyze, and optimize your WhatsApp business communications
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-1)"/>
+                            <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Chatbot</h3>
+                    <p class="feature-description">
+                        Intelligent AI that understands context, learns from conversations, and provides human-like responses to your customers 24/7.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Natural language processing</li>
+                        <li>Multi-language support</li>
+                        <li>Context-aware responses</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-2)"/>
+                            <path d="M8 12L16 8L24 12M8 12L16 16M8 12V20L16 24M24 12L16 16M24 12V20L16 24M16 16V24" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">
+                        Get deep insights into customer behavior, conversation patterns, and business performance with real-time analytics dashboards.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Real-time metrics</li>
+                        <li>Customer sentiment analysis</li>
+                        <li>Performance tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-3)"/>
+                            <circle cx="16" cy="10" r="3" stroke="white" stroke-width="2"/>
+                            <path d="M22 24C22 20.6863 19.3137 18 16 18C12.6863 18 10 20.6863 10 24" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Notifications</h3>
+                    <p class="feature-description">
+                        Never miss important conversations. Get intelligent alerts for high-priority messages, customer issues, and business opportunities.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Priority-based alerts</li>
+                        <li>Custom notification rules</li>
+                        <li>Multi-channel delivery</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-4)"/>
+                            <path d="M16 8V16L20 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="8" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">24/7 Automation</h3>
+                    <p class="feature-description">
+                        Automate repetitive tasks, schedule messages, and handle customer queries round the clock without human intervention.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Automated workflows</li>
+                        <li>Scheduled messaging</li>
+                        <li>Smart routing</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-5)"/>
+                            <rect x="8" y="8" width="16" height="16" rx="2" stroke="white" stroke-width="2"/>
+                            <path d="M12 14L15 17L20 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Easy Integration</h3>
+                    <p class="feature-description">
+                        Seamlessly connect with your existing CRM, e-commerce platforms, and business tools through our robust API.
+                    </p>
+                    <ul class="feature-list">
+                        <li>REST API access</li>
+                        <li>Webhook support</li>
+                        <li>Pre-built integrations</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#icon-gradient-6)"/>
+                            <path d="M16 8L8 14L16 20L24 14L16 8Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M8 18L16 24L24 18" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        Bank-level encryption, GDPR compliance, and enterprise-grade security to keep your customer data safe and secure.
+                    </p>
+                    <ul class="feature-list">
+                        <li>End-to-end encryption</li>
+                        <li>GDPR compliant</li>
+                        <li>Regular security audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="icon-gradient-1" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#6366F1"/>
+                    <stop offset="100%" stop-color="#8B5CF6"/>
+                </linearGradient>
+                <linearGradient id="icon-gradient-2" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#8B5CF6"/>
+                    <stop offset="100%" stop-color="#EC4899"/>
+                </linearGradient>
+                <linearGradient id="icon-gradient-3" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#EC4899"/>
+                    <stop offset="100%" stop-color="#F43F5E"/>
+                </linearGradient>
+                <linearGradient id="icon-gradient-4" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#F43F5E"/>
+                    <stop offset="100%" stop-color="#F97316"/>
+                </linearGradient>
+                <linearGradient id="icon-gradient-5" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#F97316"/>
+                    <stop offset="100%" stop-color="#EAB308"/>
+                </linearGradient>
+                <linearGradient id="icon-gradient-6" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#10B981"/>
+                    <stop offset="100%" stop-color="#06B6D4"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- Analytics Dashboard Preview -->
+    <section class="analytics-preview" id="analytics">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Analytics</div>
+                <h2 class="section-title">Data-Driven Insights</h2>
+                <p class="section-description">
+                    Make informed decisions with comprehensive analytics and reporting
+                </p>
+            </div>
+            <div class="dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">Analytics Dashboard</div>
+                    <div class="dashboard-actions">
+                        <button class="dashboard-btn">Export</button>
+                        <button class="dashboard-btn">Share</button>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="metrics-row">
+                        <div class="metric-card">
+                            <div class="metric-label">Total Conversations</div>
+                            <div class="metric-value">24,583</div>
+                            <div class="metric-change positive">+12.5%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Response Time</div>
+                            <div class="metric-value">1.2s</div>
+                            <div class="metric-change positive">-0.3s</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Satisfaction Rate</div>
+                            <div class="metric-value">94.8%</div>
+                            <div class="metric-change positive">+2.1%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">AI Resolution</div>
+                            <div class="metric-value">87.3%</div>
+                            <div class="metric-change positive">+5.4%</div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <div class="chart-title">Message Volume</div>
+                            <div class="chart-legend">
+                                <span class="legend-item"><span class="legend-dot" style="background: #6366F1;"></span> AI Handled</span>
+                                <span class="legend-item"><span class="legend-dot" style="background: #EC4899;"></span> Human Handled</span>
+                            </div>
+                        </div>
+                        <div class="chart-area">
+                            <svg width="100%" height="200" viewBox="0 0 600 200">
+                                <defs>
+                                    <linearGradient id="chart-gradient-1" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#6366F1" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+                                    </linearGradient>
+                                    <linearGradient id="chart-gradient-2" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#EC4899" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M 0 150 Q 100 120 150 100 T 300 80 T 450 60 T 600 40" stroke="#6366F1" stroke-width="3" fill="none"/>
+                                <path d="M 0 150 Q 100 120 150 100 T 300 80 T 450 60 T 600 40 L 600 200 L 0 200 Z" fill="url(#chart-gradient-1)"/>
+                                <path d="M 0 180 Q 100 170 150 165 T 300 155 T 450 150 T 600 145" stroke="#EC4899" stroke-width="3" fill="none"/>
+                                <path d="M 0 180 Q 100 170 150 165 T 300 155 T 450 150 T 600 145 L 600 200 L 0 200 Z" fill="url(#chart-gradient-2)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Pricing</div>
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-description">
+                    Choose the perfect plan for your business needs
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">49</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-description">Perfect for small businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-included">1,000 conversations/month</li>
+                        <li class="feature-included">AI-powered responses</li>
+                        <li class="feature-included">Basic analytics</li>
+                        <li class="feature-included">Email support</li>
+                        <li class="feature-excluded">Advanced integrations</li>
+                        <li class="feature-excluded">Custom AI training</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">149</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-description">For growing businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-included">10,000 conversations/month</li>
+                        <li class="feature-included">AI-powered responses</li>
+                        <li class="feature-included">Advanced analytics</li>
+                        <li class="feature-included">Priority support</li>
+                        <li class="feature-included">Advanced integrations</li>
+                        <li class="feature-included">Custom AI training</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">Custom</span>
+                        </div>
+                        <p class="pricing-description">For large organizations</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-included">Unlimited conversations</li>
+                        <li class="feature-included">AI-powered responses</li>
+                        <li class="feature-included">Enterprise analytics</li>
+                        <li class="feature-included">24/7 dedicated support</li>
+                        <li class="feature-included">Custom integrations</li>
+                        <li class="feature-included">Dedicated AI model</li>
+                    </ul>
+                    <button class="pricing-btn">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your WhatsApp Business?</h2>
+                <p class="cta-description">
+                    Join thousands of businesses using Vachya.ai to automate customer conversations and boost engagement
+                </p>
+                <div class="cta-actions">
+                    <button class="btn-primary btn-large">Start Free Trial</button>
+                    <button class="btn-secondary btn-large">Schedule Demo</button>
+                </div>
+                <p class="cta-note">No credit card required • 14-day free trial • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="10" fill="url(#footer-logo-gradient)"/>
+                            <path d="M20 10L28 16V24L20 30L12 24V16L20 10Z" fill="white" opacity="0.9"/>
+                            <circle cx="20" cy="20" r="4" fill="url(#footer-logo-gradient)"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Vachya.ai</span>
+                    </div>
+                    <p class="footer-description">
+                        AI-powered WhatsApp automation for modern businesses. Transform customer conversations with intelligent chatbots.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vachya.ai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
